@@ -1,0 +1,194 @@
+// out: ../custom/custom.css, sourcemap: true, compress: true
+
+.tabbrowser-tabbox {
+    background-color:  #333 !important;
+}
+
+/* Reset styles */
+a, button, .btn, label, .ui-slider-handle {
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  -webkit-touch-callout: none !important;
+}
+
+/* kollomen */
+[data-id="UNKNOWN"] {
+  border-bottom: 1px solid #FFF !important;
+}
+
+/* Rows / cols */
+.col-data {
+  padding-top: 5px;
+
+  > .ui-slider-horizontal {
+    margin-left: 50% !important;
+    margin-top: -12px;
+  }
+}
+
+div.mh {
+  height: 70px !important;
+/*  border-bottom: 1px solid #222 !important; */
+}
+
+.mh[data-id] {
+  transition: background-color 0.5s ease;
+
+  &:active {
+    background-color: #333 !important;
+  }
+}
+
+.transbg {
+  background-color: transparent !important;
+}
+
+/* Buttons */
+.btn.btn-default {
+  background-color: #222 !important;
+  border: none !important;
+  color: #FFF !important;
+
+  &:active {
+    background-color: #444 !important;
+    border: none !important;
+    color: #FFF !important;
+  }
+}
+
+/* Aanwezig */
+[data-id="154"] {
+
+  .btn-group {
+    position: absolute !important;
+    right: -5px;
+    top: 0;
+
+    > .btn {
+    padding: 6px 10px !important;
+    }
+  }
+
+
+  .btn-group>.btn:first-child {
+    display: none;
+  }
+
+  .btn-group>.btn:nth-child(2) {
+    border-radius: 6px 0 0 6px !important;
+  }
+
+  .btn-group>.btn:last-child {
+    border-radius: 0 6px 6px 0 !important;
+  }
+}
+
+/* Radio play/pause buttons */
+[data-id="150"] {
+
+  .fa-music {
+    font-size: 24px !important;
+  }
+
+  .btn-group {
+    position: absolute !important;
+    right: -5px;
+    top: 0;
+
+    > .btn {
+      padding: 6px 10px !important;
+    }
+  }
+
+  .btn-group>.btn:first-child {
+    display: none;
+  }
+
+  .btn-group>.btn:nth-child(2) {
+    border-radius: 6px 0 0 6px !important;
+  }
+
+  .btn-group>.btn:last-child {
+    border-radius: 0 6px 6px 0 !important;
+  }
+}
+
+/* Window sensor icon */
+img.icon {
+  max-width: 28px !important
+}
+
+/* Color picker */
+.sp-replacer {
+  position: absolute;
+  left: 102px;
+  top: 4px;
+  border: none !important;
+  background: none !important;
+
+  .sp-preview {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    overflow: hidden;
+  }
+
+  .sp-dd {
+    display: none;
+  }
+}
+
+.sp-picker-container {
+  width: 320px !important;
+
+  .sp-button-container {
+    display: none;
+  }
+}
+
+/* Sliders */
+.ui-slider {
+
+  &-handle {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-color:  #ffffff;
+    height: 25px;
+    width: 25px;
+    margin: -7px !important;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: transparent;
+      margin: -20px;
+      border-radius: 50%;
+    }
+  }
+
+  &-horizontal {
+    background-color: #6a6a6a;
+    border-color: transparent;
+    margin-left: 50%;
+    height: 1px;
+  }
+
+}
+
+/* Misc */
+.fa.fa-lightbulb-o.on {color: yellow;}
+.fa-lightbulb-o:before {font-size: 36px;}
+.col-data .title {font-size: 18px; font-weight: normal;}
+.col-data {margin-left: 15px;}
+
+.col-icon > .fa {
+  color: #FFF;
+  font-size: 30px !important;
+}
+
+.screen3 .imgblock img {
+  width: 100%
+}
